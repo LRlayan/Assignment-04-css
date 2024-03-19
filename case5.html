@@ -3,8 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>case5</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        main{
+            width:50vw;
+            height: 50vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            border: 3px solid red;
+            overflow: hidden;
+        }
+        section{
+            display: flex;
+            width: 200vw;
+            animation-duration: 10s;
+            animation-name: animi;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        main>section>div{
+            width: 50vw;
+            height: 50vh;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+
+        main>section>div:first-child{
+            background-image: url("assets/image/slide1.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        main>section>div:nth-child(2){
+            background-image: url("assets/image/slide2.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        main>section>div:nth-child(3){
+            background-image: url("assets/image/slide3.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        main>section>div:nth-child(4){
+            background-image: url("assets/image/slide4.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        @keyframes animi {
+            0%, 20%{
+                transform: translateX(-0%);
+            }
+            25%,45%{
+                transform: translateX(-25%);
+
+            }
+            50%,70%{
+                transform: translateX(-50%);
+            }
+            75%,100%{
+                transform: translateX(-75%);
+            }
+        }
+    </style>
 </head>
 <body>
-
+    <main>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
 </body>
 </html>
