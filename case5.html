@@ -14,13 +14,13 @@
             left: 0;
             bottom: 0;
             margin: auto;
-            border: 3px solid red;
+            border: 3px solid black;
             overflow: hidden;
         }
         section{
             display: flex;
             width: 200vw;
-            animation-duration: 10s;
+            animation-duration: 7s;
             animation-name: animi;
             animation-iteration-count: infinite;
             animation-direction: alternate;
@@ -29,36 +29,28 @@
             width: 50vw;
             height: 50vh;
             background-color: yellow;
-            border: 2px solid black;
+        }
+
+        .imageSetting{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         main>section>div:first-child{
             background-image: url("assets/image/slide1.jpeg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
         }
+
         main>section>div:nth-child(2){
             background-image: url("assets/image/slide2.jpeg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
         }
+
         main>section>div:nth-child(3){
             background-image: url("assets/image/slide3.jpeg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
         }
+
         main>section>div:nth-child(4){
             background-image: url("assets/image/slide4.jpeg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
         }
         @keyframes animi {
             0%, 20%{
@@ -66,7 +58,6 @@
             }
             25%,45%{
                 transform: translateX(-25%);
-
             }
             50%,70%{
                 transform: translateX(-50%);
@@ -80,10 +71,10 @@
 <body>
     <main>
         <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="imageSetting"></div>
+            <div class="imageSetting"></div>
+            <div class="imageSetting"></div>
+            <div class="imageSetting"></div>
         </section>
     </main>
 </body>
