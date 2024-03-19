@@ -15,6 +15,36 @@
 
             position: absolute;
         }
+
+        /*road and city*/
+        main{
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        main>section{
+            display: flex;
+            width: 100vw;
+            height: 80vh;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .animation{
+            animation-name: roadCityAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .size{
+            width: 100vw;
+            height: 40vh;
+        }
     </style>
 </head>
 <body>
