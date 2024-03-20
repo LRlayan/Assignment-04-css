@@ -36,10 +36,7 @@
         }
 
         .animation{
-            animation-name: roadCityAnimation;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+            animation: roadCityAnimation 5s infinite ease;
         }
 
         .size{
@@ -74,8 +71,8 @@
             aspect-ratio: 1/1;
 
             animation-name: wheel-animation;
-            animation-duration: 1s;
-            animation-timing-function: linear;
+            animation-duration: 5s;
+            animation-timing-function: ease-out ;
             animation-iteration-count: infinite;
         }
 
@@ -107,12 +104,6 @@
             0%{
                 transform: translateX(-0%);
             }
-            50%{
-                transform: translateX(-50%);
-            }
-            75%{
-                transform: translateX(-75%);
-            }
             100% {
                 transform: translateX(-100%);
             }
@@ -121,6 +112,9 @@
         @keyframes wheel-animation {
             0%{
                 transform: rotate(0);
+            }
+            50%{
+                transform: rotate(-360deg);
             }
             100%{
                 transform: rotate(360deg);
@@ -132,6 +126,10 @@
 <main>
     <div id="sky"></div>
     <section>
+        <section class="animation">
+            <div class="city size"></div>
+            <div class="road size"></div>
+        </section>
         <section class="animation">
             <div class="city size"></div>
             <div class="road size"></div>
